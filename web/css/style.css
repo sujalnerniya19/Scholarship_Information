@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: wheat; /* Semi-transparent white background */
+    background-color: wheat; 
 }
 .logo {
     display: flex;
@@ -25,7 +25,7 @@ header {
 }
 
 .logo i {
-    height: 30px; /* Adjust as needed */
+    height: 30px; 
     margin-right: 10px;
     font-size: 30px;
 }
@@ -49,4 +49,48 @@ nav ul li a {
 nav ul li {
     display: inline;
     margin-right: 25px;
+}
+
+.form-container {
+    background-color: hsla(0, 0%, 100%, 0.9);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(3, 146, 241, 0.943);
+    max-width: 400px;
+    width: 700px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label {
+    margin-bottom: 10px;
+}
+
+.form-container form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container p {
+    text-align: center;
 }

@@ -27,29 +27,42 @@
         <div id = "section">
             <div id="registerbox"> 
                 <span i="sectionheading">
-                    <center>Registration form</center>
-                </span>
+                    <h1>Registration form</h1>
+                </span><br>
                 <form action="">
-                <label for="username">Username:</label>
-                <input type="text" placeholder="enter username" id="username" name="username">
-                <label for="email">email:</label>
-                <input type="email" placeholder="enter email" id="email" name="email">
-                <label for="category">category:</label>
-                <input type="text" placeholder="enter category" id="category" name="category">
-                <label for="income">income:</label>
-                <input type="number" placeholder="enter income" id="number" name="number">
-                <label for="gender">gender:</label>
-                <input type="text" placeholder="enter gender" id="gender" name="gender">
-                <label for="dob">DOB:</label>
-                <input type="date" placeholder="enter dob" id="dob" name="dob">
-                <label for="country">country:</label>
-                <input type="text" placeholder="enter country" id="country" name="country">
-                <label for="state">state:</label>
-                <input type="text" placeholder="enter state" id="state" name="state">
-                <label for="contact">contact:</label>
-                <input type="number" placeholder="enter contact" id="contact" name="contact">
-                <label for="password">password:</label>
-                <input type="password" placeholder="enter password" id="password" name="password">
+                <label for="fullName">Full Name:</label>
+                <input type="text" placeholder="First name" id="firstName" name="firstName">
+                <input type="text" placeholder="Last name" id="lastName" name="lastName"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="enter email" id="email" name="email"><br><br>
+                <label for="category">Category:</label>
+                <input type="text" placeholder="enter category" id="category" name="category"><br><br>
+                <label for="income">Income:</label>
+               <!-- <input type="number" id="income" name="income">-->
+                <select id="income" name="income">
+                    <option value="less than 1 lakh">less than 1 lakh</option>
+                    <option value=" 1 lakh- 3 lakh">1 lakh- 3 lakh</option>
+                    <option value="5 lakh- 7 lakh">5 lakh- 7 lakh</option>
+                    <option value="7 lakh and above">7 lakh and above</option></select><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                 <input type="radio" id="female" name="gender" value="female">
+                 <label for="female">Female</label>
+                 <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say">
+                 <label for="prefer_not_to_say">Prefer not to say</label><br><br>
+                 <label for="dob">DOB:</label>
+                <input type="date" placeholder="enter dob" id="dob" name="dob"><br><br>
+                <label for="country">Country:</label>
+                <input type="text" placeholder="enter country" id="country" name="country"><br><br>
+                <label for="state">State:</label>
+                <input type="text" placeholder="enter state" id="state" name="state"><br><br>
+                <label for="contact">Contact:</label>
+                <input type="number" placeholder="enter contact" id="contact" name="contact"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="enter password" id="password" name="password"><br><br>
+                <label for="password">Confirm Password:</label>
+                <input type="password" placeholder="confirm password" id="password" name="ConfirmPassword"><br><br>
                 <input type="submit" value="submit">
                 </form>
                  </div>

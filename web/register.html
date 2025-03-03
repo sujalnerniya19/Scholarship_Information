@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scholarship</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -23,13 +25,79 @@
             </ul>
         </nav>
     </header>
-</body>
-        <div id = "section">
+
+    <section class="reg-form-container">
+        <form action="register" method="post">
+
+            <h2><b>Register</b></h2>
+            <br>
+
+            <label for="fullName"><b>Full Name:</b></label>
+            <input type="text" placeholder="Full Name" id="fullname" name="fullname" required> 
+            
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="Enter Email" id="email" name="email" required>
+            
+            <label for="category"><b>Category:</b></label>
+            <!-- <input type="text" placeholder="enter category" id="category" name="category"><br><br>-->
+            <select id="category" name="category" required>
+                    <option value="Select">Select</option>
+                    <option value="General">General</option>
+                    <option value="OBC">OBC</option>
+                    <option value="ST">ST</option>
+                    <option value="SC">SC</option></select>
+            </select>
+            
+            <label for="income"><b>Annual Income:</b></label>
+               <!-- <input type="number" id="income" name="income">-->
+                <select id="income" name="income" required>
+                    <option value="Select">Select</option>
+                    <option value="less than 1 lakh">less than 1 lakh</option>
+                    <option value=" 1 lakh - 3 lakh">1 lakh - 3 lakh</option>
+                    <option value="5 lakh - 7 lakh">5 lakh - 7 lakh</option>
+                    <option value="7 lakh and above">7 lakh and above</option>
+                </select>
+
+            <label for="gender"><b>Gender:</b></label>
+            <select id="gender" name="gender" required>
+                <option value="Select">Select</option>
+                <option value="Male" id="male">Male</option>
+                <option value="Female" id="female">Female</option>
+                <option value="prefer_not_to_say" id="prefer_not_to_say">Prefer not to say</option>
+            </select>
+
+            
+            <label for="dob"><b>Date of Birth:</b></label>
+            <input type="date" placeholder="DD-MM-YYYY" id="dob" name="dob" required>
+            
+            <label for="country"><b>Country:</b></label>
+            <select id="country" name="country" required>
+                <option value="Select">Select</option>
+                <option value="India" id="male">India</option>
+                <option value="abroad" id="male">Abroad</option>
+            </select>
+            
+            <label for="state"><b>State:</b></label>
+            <input type="text" placeholder="Enter State" id="state" name="state" required>
+            
+            <label for="contact"><b>Phone No:</b></label>
+            <input type="tel" placeholder="Enter Phone Number" id="phone" name="phone" required>
+            
+            <label for="password"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" id="password" name="password" required>
+            
+            <label for="Confirm Password"><b>Confirm Password:</b></label>
+            <input type="password" placeholder="Confirm Password" id="password" name="ConfirmPassword" required>
+            <br>
+            <button type="Submit"><b>Submit</b></button>
+    </section>
+      
+        <!--<div id = "section">
             <div id="registerbox"> 
                 <span i="sectionheading">
                     <h1>Registration form</h1>
                 </span><br>
-                <form action="">
+                <form action="register" method="post">
                 <label for="fullName">Full Name:</label>
                 <input type="text" placeholder="First name" id="firstName" name="firstName">
                 <input type="text" placeholder="Last name" id="lastName" name="lastName"><br><br>
@@ -37,9 +105,9 @@
                 <input type="email" placeholder="enter email" id="email" name="email"><br><br>
                 <label for="category">Category:</label>
                 <input type="text" placeholder="enter category" id="category" name="category"><br><br>
-                <label for="income">Income:</label>
+                <label for="income">Income:</label>-->
                <!-- <input type="number" id="income" name="income">-->
-                <select id="income" name="income">
+            <!-- <select id="income" name="income">
                     <option value="less than 1 lakh">less than 1 lakh</option>
                     <option value=" 1 lakh- 3 lakh">1 lakh- 3 lakh</option>
                     <option value="5 lakh- 7 lakh">5 lakh- 7 lakh</option>
@@ -66,6 +134,7 @@
                 <input type="submit" value="submit">
                 </form>
                  </div>
-         </div>
+         </div>-->
+</body>      
 
 </html>

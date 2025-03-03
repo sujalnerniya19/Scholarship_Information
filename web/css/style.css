@@ -57,12 +57,13 @@ nav ul li {
 }
 
 .form-container {
-    background-color: -webkit-linear-gradient(to top, #C392EC, #85D5C8);
-    background-color: linear-gradient(to right, #C392EC, #85D5C8);
+    /*background-color: -webkit-linear-gradient(to top, #C392EC, #85D5C8);
+    background-color: linear-gradient(to right, #C392EC, #85D5C8);*/
+    background-color: transparent;
     margin: 120px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.1);
     max-width: 400px;
     width: 700px;
 }
@@ -92,11 +93,97 @@ nav ul li {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #3cbcd5;
+    background-color: #1bb8d7;
     color: white;
     cursor: pointer;
 }
 
 .form-container p {
+    text-align: center;
+}
+
+/* Register CSS */
+
+.reg-form-container {
+    /*background-color: -webkit-linear-gradient(to top, #C392EC, #85D5C8);
+    background-color: linear-gradient(to right, #C392EC, #85D5C8);*/
+    background-color: transparent;
+    margin: 120px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.1);
+    max-width: 600px ;
+    width: 700px ;
+}
+
+.reg-form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+}
+
+.reg-form-container form {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 30px; */
+}
+
+.reg-form-container form label {
+    margin-bottom: 10px;
+    display: block;
+    margin: 10px 0;
+    color: black;
+    text-align: left;
+    margin-left: 25px;
+}
+
+
+.reg-form-container form select {
+  width: 100% auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.reg-form-container form
+input[type="text"],
+.reg-form-container form
+input[type="email"],
+.reg-form-container form
+input[type="tel"],
+.reg-form-container form
+input[type="password"], 
+.reg-form-container form
+input[type="date"], 
+.reg-form-container form
+select {
+
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+.reg-form-container form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reg-form-container form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1bb8d7;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.reg-form-container p {
     text-align: center;
 }

@@ -1,3 +1,4 @@
+create Database scholarship;
 show databases;
 use scholarship;
 CREATE TABLE User (
